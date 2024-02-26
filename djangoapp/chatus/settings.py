@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
+    'chat.apps.ChatConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -84,7 +85,7 @@ DATABASES = {
         'USER': os.getenv('POSTGRES_USER', 'CHANGE-ME'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD', 'CHANGE-ME'),
         'HOST': os.getenv('POSTGRES_HOST', 'CHANGE-ME'),
-        'PORT': os.getenv('POSTGRES_PORT', 'CHANGE-ME')
+        'PORT': os.getenv('POSTGRES_PORT', '8080')
     }
 }
 
